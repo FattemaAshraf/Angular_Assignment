@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AngularAssignment';
+  pageTitle = 'Write in app.component';
+  display(title: string){
+    return this.pageTitle+" "+title
+  }
 }

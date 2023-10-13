@@ -8,7 +8,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="#" routerLink="Day5" >Home</a>
           <a class="nav-link" href="https://www.linkedin.com/in/fatma-ashraf-b57279103">LinkedIn</a>
           <a class="nav-link" href="https://github.com/FattemaAshraf">GitHub</a>
         </div>
@@ -17,12 +17,19 @@
   </nav>
 
 <!-- Nav Bar End -->
-
 <!-- Routing on Component Resource -->
 <div class="container">
-  <router-outlet></router-outlet>
+  <div class="grid gap-3">
+    <div class="p-2 g-col-6">
+      <app-name-and-image></app-name-and-image> 
+    </div>
+    <div class="p-2 g-col-6">
+    </div>
+    <div class="p-2 g-col-6">Grid item 3</div>
+    <div class="p-2 g-col-6">Grid item 4</div>
+  </div>
 </div>
-
+<router-outlet></router-outlet>
 <!-- footer start -->
 <footer class="bg-dark text-center text-lg-start">
   <div class="text-center p-3 text-white" >
